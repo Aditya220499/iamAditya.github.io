@@ -1,0 +1,20 @@
+<h6>Project Goal:</h6>
+I developed a user management application designed to efficiently organize and manage user details, with a focus on scalability and a smooth user experience.
+
+<h6>Frontend Development:</h6>
+<li>I built the frontend using React for its component-based structure, ensuring a responsive and dynamic UI. To manage the application's state effectively, I integrated Redux-Toolkit, which helped keep everything predictable and maintainable.</li>
+<li>For form validation, I used Formik and Yup, which allowed me to handle user input with ease and ensure data integrity.</li>
+<li>I also incorporated React-Intl for internationalization, making the application adaptable to different languages and regions.</li>
+<li>On the testing side, I used React Testing Library along with MSW to ensure the frontend is robust and the API interactions are accurately simulated during tests.</li>
+
+<h6>Backend Development:</h6>
+<li>On the backend, I chose Express for its flexibility and speed in creating a RESTful API. I included middleware to handle validation and ensure that all incoming data is properly processed before interacting with the database.</li>
+<li>The backend connects to an SQL database, which I containerized using Docker. This approach provides a stable environment for managing relational data, with the flexibility to scale as needed.</li>
+
+<h6>Containerization/h6>
+<li>To streamline deployment, I containerized the entire application using Docker Compose. This setup allows each part of the application—the SQL database, backend, and frontend—to run in isolated containers, ensuring consistency across different environments.</li>
+<li>I created separate Dockerfiles for each component: one for the SQL database, one for the backend, and one for the Nginx frontend. This modular approach makes it easier to manage and deploy each part of the application independently.</li>
+
+<h6>Explanation:</h6>
+The goal was to build a scalable and maintainable user management system. By choosing React and Redux-Toolkit, I ensured that the frontend is both dynamic and easy to manage. The backend, built with Express, is designed to be flexible and secure, with all data interactions handled through a Dockerized SQL database for consistency.
+Containerizing the application using Docker Compose was crucial to ensure that it can be deployed reliably in any environment. The use of separate Dockerfiles for the database, backend, and frontend allows for greater control and flexibility in managing the application components. Overall, this project reflects my approach to creating efficient, scalable, and user-friendly applications.

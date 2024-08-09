@@ -72,8 +72,31 @@
         <div id="project-list"></div>
         <script>
             const projects = [
-                { name: 'User Details Application', description: 'Description', link: 'https://github.com/Aditya220499/User-App' },
-                { name: 'Task Management Application', description: 'Description.', link: 'https://github.com/Aditya220499/Task-client' }
+                {
+                     name: 'User Details Application',
+                     description: `
+                     <h5>Project Goal:</h5>
+I developed a user management application designed to efficiently organize and manage user details, with a focus on scalability and a smooth user experience.
+
+<h5>Explanation:</h5>
+The goal was to build a scalable and maintainable user management system. By choosing React and Redux-Toolkit, I ensured that the frontend is both dynamic and easy to manage. The backend, built with Express, is designed to be flexible and secure, with all data interactions handled through a Dockerized SQL database for consistency.
+Containerizing the application using Docker Compose was crucial to ensure that it can be deployed reliably in any environment. The use of separate Dockerfiles for the database, backend, and frontend allows for greater control and flexibility in managing the application components. Overall, this project reflects my approach to creating efficient, scalable, and user-friendly applications.
+
+                     `,
+                     link: 'https://github.com/Aditya220499/User-App' 
+                },
+                {
+                     name: 'Task Management Application',
+                     description: 
+                     `
+                     <h5>Project Goal:</h5>
+I developed a task management system to allow users to manage all their tasks in a single application. The primary goal of this project was to deepen my understanding of how Redux Toolkit works, particularly in managing global state.
+
+<h5>Explanation:</h5>
+This project was focused on building a task management system to help users manage their tasks in one place, with the primary goal of understanding how Redux Toolkit manages global state. By using React and Material-UI, I created a sleek and user-friendly interface. The project provided me with hands-on experience in configuring the Redux store and slices, as well as working with various hooks to manage state in function-based components. This experience deepened my understanding of state management and enhanced my frontend development skills.
+                     `,
+                     link: 'https://github.com/Aditya220499/Task-client'
+                }
             ];
 
             const projectList = document.getElementById('project-list');
@@ -85,6 +108,7 @@
                     <h3>${project.name}</h3>
                     <p>${project.description}</p>
                     <a href="${project.link}">GitHub Repo</a>
+                    <hr>
                 `;
                 projectList.appendChild(projectDiv);
             });
